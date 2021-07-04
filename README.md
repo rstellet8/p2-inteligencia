@@ -8,7 +8,7 @@ Documentação dos dados: <https://resources.lendingclub.com/LCDataDictionary.xl
 
 Também disponível em:
 
-1. [Arquivo estático](https://github.com/rstellet8/p2-inteligencia/blob/main/data/docs/LCDataDictionary.xlsx)
+1. [Arquivo estático](https://github.com/rstellet8/p2-inteligencia/blob/main/data/docs/)
 
 2. [Wrapper para Dataframe](https://github.com/rstellet8/p2-inteligencia/blob/main/description.py)
 
