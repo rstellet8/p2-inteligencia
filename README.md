@@ -4,9 +4,8 @@
 
 Fonte dos dados: <https://www.kaggle.com/wordsforthewise/lending-club>
 
-Documentação dos dados: <https://resources.lendingclub.com/LCDataDictionary.xlsx>
-
-    também disponível em: data\docs\LCDataDictionary.xlsx
+Documentação dos dados: <https://resources.lendingclub.com/LCDataDictionary.xlsx> 
+      também disponível em: data\docs\LCDataDictionary.xlsx
 
 ## Conteúdo
 
