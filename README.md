@@ -20,8 +20,8 @@ Também disponível em:
 
 ## Conteúdo
 
-- sepAmostra: Extrai uma amostra de 10000 linhas dos dados originais
 - featureDiscovery: Limpeza, transformação, criação de novos features
+- sepAmostra: Extrai uma amostra de 10000 linhas dos dados originais
 - description: extrai a descrição das colunas para um DataFrame
 - getIntRate: extrai informações sobre a taxa de juros dos EUA do site do FRED
 - getCPI: extrai informações sobre a inflação dos EUA do site do FRED

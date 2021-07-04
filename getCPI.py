@@ -6,7 +6,7 @@ URL = "https://fred.stlouisfed.org/graph/fredgraph.csv?bgcolor=%23e1e9f0&chart_t
 def getCPI(url=URL):
     df = pd.read_csv(URL, names=["date", "cpi"], skiprows=1)
     df["date"] = pd.to_datetime(df["date"])
-    df["cpi"] = df["cpi"].pct_change() * 100
+    df["cpi"] = df["cpi"].pct_change(periods=12) * 100
     return df.query("date >= '2000-01-01'")
 
 if __name__ == "__main__":
