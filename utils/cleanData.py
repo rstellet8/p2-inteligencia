@@ -1,8 +1,8 @@
 import numpy as np
 import pandas as pd
 
-from getCPI import getCPI
-from getIntRate import getIntRate
+from utils.getCPI import getCPI
+from utils.getIntRate import getIntRate
 
 
 def cleanData(path="data/sample/sampleAccepted.csv"):

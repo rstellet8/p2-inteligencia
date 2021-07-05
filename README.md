@@ -29,9 +29,11 @@ Também disponível em:
 ## Ordem de leitura
 
 1. [featureDiscovery.ipynb](https://github.com/rstellet8/p2-inteligencia/blob/main/featureDiscovery.ipynb): onde é feita a seleção e limpeza das variáveis
-2. [Modelagem.ipynb](https://github.com/rstellet8/p2-inteligencia/blob/main/modelagem.ipynb): onde é feita a modelagem das variáveis
+2. [modelagem.ipynb](https://github.com/rstellet8/p2-inteligencia/blob/main/modelagem.ipynb): onde é feita a modelagem das variáveis
 
 ### Opcionais
 
-- [utils/description.ipynb](https://github.com/rstellet8/p2-inteligencia/blob/main/description.ipynb): descrição das variáveis
-- utils/sepAmostra.ipynb
+- [utils/sepAmostra.ipynb](https://github.com/rstellet8/p2-inteligencia/blob/main/utils/sepAmostra.ipynb): Script usado para retirar uma amostra de 10000 linhas dos dados orinais;
+- [utils/description.ipynb](https://github.com/rstellet8/p2-inteligencia/blob/main/utils/description.ipynb): Script usado para obter a descrição dos dados em uma DataFrame;
+- [utils/getCPI.ipynb](https://github.com/rstellet8/p2-inteligencia/blob/main/utils/getCPI.ipynb): extrai os dados oficiais do CPI do site do FRED;
+- [utils/getIntRate.ipynb](https://github.com/rstellet8/p2-inteligencia/blob/main/utils/getIntRate.ipynb): extrai os dados oficiais da taxa de juros básica do site do FRED.
