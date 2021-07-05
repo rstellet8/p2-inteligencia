@@ -25,3 +25,13 @@ Também disponível em:
 - description: extrai a descrição das colunas para um DataFrame
 - getIntRate: extrai informações sobre a taxa de juros dos EUA do site do FRED
 - getCPI: extrai informações sobre a inflação dos EUA do site do FRED
+
+## Ordem de leitura
+
+1. [featureDiscovery.ipynb](https://github.com/rstellet8/p2-inteligencia/blob/main/featureDiscovery.ipynb): onde é feita a seleção e limpeza das variáveis
+2. [Modelagem.ipynb](https://github.com/rstellet8/p2-inteligencia/blob/main/modelagem.ipynb): onde é feita a modelagem das variáveis
+
+### Opcionais
+
+- [description.ipynb](https://github.com/rstellet8/p2-inteligencia/blob/main/description.ipynb): descrição das variáveis
+- sepAmostra.ipynb()

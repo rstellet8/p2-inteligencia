@@ -5,7 +5,7 @@ URL = "https://fred.stlouisfed.org/graph/fredgraph.csv?bgcolor=%23e1e9f0&chart_t
 
 
 def getIntRate(url=URL):
-    df = pd.read_csv(URL, names=["date", "intRate"], skiprows=1)
+    df = pd.read_csv(URL, names=["date", "BasicIntRate"], skiprows=1)
     df["date"] = pd.to_datetime(df["date"])
     return df.query("date >= '2000-01-01'")
 

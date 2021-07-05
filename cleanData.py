@@ -295,4 +295,8 @@ def cleanData():
 
     target["prob"] = target["chargedOff"] + target["late"]
 
-    return target.join(features)
+    df = target.join(features)
+
+    df = df.drop(columns=["multiplasContas", "cpi", "NeutralPurpose"])
+    
+    return df
