@@ -5,8 +5,8 @@ from getCPI import getCPI
 from getIntRate import getIntRate
 
 
-def cleanData():
-    df1 = pd.read_csv("data/sample/sampleAccepted.csv")
+def cleanData(path="data/sample/sampleAccepted.csv"):
+    df1 = pd.read_csv(path)
     df1 = df1.drop(columns=["member_id", "url"])
 
     features = df1.loc[:, [
@@ -33,6 +33,9 @@ def cleanData():
 
 
     def formatTerm(line):
+        if np.nan_to_num(line, nan=-1) == -1:
+            return np.NaN
+
         line = line.strip()
         line = line.split(" ")
 
@@ -67,9 +70,9 @@ def cleanData():
     features = features.rename(columns={"emp_length": "long_job"})
 
     def toIntPurpose(line):
-        goodList = ["small_business", "renewable_energy", "home_improvement", "major_purchase", "moving", "house", "car"]
+        goodList = ["small_business", "renewable_energy", "home_improvement", "major_purchase", "moving", "house", "car", "educational"]
         badList = ["debt_consolidation", "credit_card", "medical"]
-        neutralList = ["other", "vacation", "wedding"]
+        neutralList = ["other", "vacation", "wedding", np.nan]
 
         if line in goodList:
             return 1
@@ -123,6 +126,9 @@ def cleanData():
         elif line >= 0:
             return 1
         
+        if np.nan_to_num(line) == 0:
+            return 0
+
         else:
             raise NotImplementedError(f"Valor inválido: {line}")
 
@@ -135,6 +141,9 @@ def cleanData():
             return 1
 
         elif line > 2:
+            return 0
+        
+        if np.nan_to_num(line) == 0:
             return 0
         
         else:
@@ -167,6 +176,9 @@ def cleanData():
         elif line == 0:
             return 0
         
+        if np.nan_to_num(line) == 0:
+            return 0
+
         else:
             raise NotImplementedError(f"Entrada inválida em PubRec, valor que causou o erro: {line}")
 
@@ -229,6 +241,9 @@ def cleanData():
         elif line == 0:
             return 0
         
+        elif np.nan_to_num(line, nan=-1) == -1:
+            return np.NaN
+
         else:
             raise NotImplementedError(f"Entrada inválida em chargeoff_within_12_mths, valor que causou o erro: {line}")
 

@@ -33,5 +33,5 @@ Também disponível em:
 
 ### Opcionais
 
-- [description.ipynb](https://github.com/rstellet8/p2-inteligencia/blob/main/description.ipynb): descrição das variáveis
-- sepAmostra.ipynb()
+- [utils/description.ipynb](https://github.com/rstellet8/p2-inteligencia/blob/main/description.ipynb): descrição das variáveis
+- utils/sepAmostra.ipynb
